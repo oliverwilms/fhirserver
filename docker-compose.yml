@@ -10,5 +10,6 @@ services:
       - 32783:52773
       - 32784:53773
     volumes:
-      - ~/iris.key:/usr/irissys/mgr/iris.key
+      - /ICS/iris.key:/usr/irissys/mgr/iris.key
       - ./:/irisdev/app
+      - /efs/ICS:/ICS
